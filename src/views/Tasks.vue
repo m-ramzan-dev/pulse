@@ -1,8 +1,7 @@
-<!-- eslint-disable @typescript-eslint/no-explicit-any -->
 <script setup lang="ts">
 import {ref} from 'vue';
 import supabase from '../libs/SupabaseClient'
-import {Tables} from '../../database/types';
+import type {Tables} from '../../database/types';
 const tasks = ref<Tables<'tasks'>[]|null>(null)
 ;(async ()=>{
   const {data,error} = await supabase.from('tasks').select();
