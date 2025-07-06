@@ -14,7 +14,8 @@
     "supabase:init": "supabase init",
     "supabase:login": "supabase login",
     "supabase:link": "supabase link --project-ref tmbiswrfkvjiweeqrlya",
-    "supabase:migration": "supabase migration new projects_schema"
+    "supabase:migration": "supabase migration new projects_schema",
+    "supabase:types": "npx supabase gen types typescript --project-id tmbiswrfkvjiweeqrlya --schema public > database/types.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.50.3",
