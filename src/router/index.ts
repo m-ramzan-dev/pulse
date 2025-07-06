@@ -21,6 +21,11 @@ const router = createRouter({
       component: () => import('@views/ProjectView.vue'),
     },
     {
+      path: '/tasks',
+      name: 'tasks',
+      component: () => import('@views/Tasks.vue'),
+    },
+    {
       path: '/:catchAll(.*)*',
       name: 'not-found',
       component: h('p', { style: 'color:red;' }, '404 Not Found'),
